@@ -27,6 +27,9 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <div>
+        test test test
+      </div>
 
       <div className={styles.center}>
         <Image
