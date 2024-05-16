@@ -1,0 +1,15 @@
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; /*is for the text alignement */
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+}
