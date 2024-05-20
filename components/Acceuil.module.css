@@ -1,0 +1,74 @@
+/* /* .app{
+    border-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.topContent{
+    margin-bottom: 40px;
+    font-size: 200%;
+    text-align: center;
+    color: chocolate;
+}
+.main{
+    background-image: url('../public/imagesPageAcceuil/rice.webp');
+    background-size: cover;    
+    background-position: center;    
+    text-align: center;
+    
+    
+} 
+.divStyle{
+    color: blueviolet;
+    
+}*/
+ /* .main{
+    margin-bottom: 40px;
+    font-size: 200%;
+    text-align: center;
+    color: chocolate;
+    background-image: url('../public/imagesPageAcceuil/rice.webp');
+    justify-content: flex-start;
+} */
+/*.listeUl{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+
+     align-items: center;
+    padding: 300px;     
+}  */
+
+.main {    
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .contentWrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .divStyle {
+    color: blueviolet;
+    
+  }
+  
+  .listeUl {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  
