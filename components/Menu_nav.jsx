@@ -5,10 +5,10 @@ export default function Menu_Nav (){
     return <nav className={styles.nav}>
          {/* <IoHome /> */}
         <ul>
-            <li> <a href="#"> Nom societe </a></li>
-            <li> <a href="#"> Home </a></li>
-            <li> <a href="#"> Home </a></li>
-            <li> <a href="#"> Search </a></li>
+            <li> <a href="#"> Acceuil </a></li>
+            <li> <a href="#"> Testimonies </a></li>
+            <li> <a href="#"> About Us </a></li>
+            <li> <a href="#"> Connexion </a></li>
         </ul>
     </nav>
 }
