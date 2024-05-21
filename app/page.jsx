@@ -1,14 +1,15 @@
-import Acceuil from '@/components/Acceuil'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 
-//import Acceuil from "@/components/Acceuil";
+import Home from "@/components/Acceuil";
 
-const Home = () => {
-  return(
-    <main className={styles.welcome}>
-      <Acceuil/>
-    </main>
-  )
+function App() {
+  return (
+    <div className={styles.App}>
+      <Home />
+      
+    </div>
+  );
 }
 
-export default Home
+export default App;

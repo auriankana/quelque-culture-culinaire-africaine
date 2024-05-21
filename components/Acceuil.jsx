@@ -1,62 +1,49 @@
-// import styles from "./Acceuil.module.css";
-// import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import styles from '@/components/Acceuil.module.css'
+import BannerBackground from "../public/imagesPageAcceuil/home-banner-background.webp";
+import BannerImage from "../public/imagesPageAcceuil/home-banner-image.webp";
+// import Navbar from "./Navbar";
+import { FiArrowRight } from "react-icons/fi";
 
-// const Acceuil = () => {
-//   return (
-//     <main className={styles.main}>
-//       <h1>
-//         Bienvenue dans notre page de presentation des traditions culinaires
-//         africaines variees
-//       </h1>
-//       <div className={styles.divStyle}>
-//         <ul className={styles.listeUl}>
-//           <li>
-//             <Link href="#">Cameroun</Link>
-//           </li>
-//           <li>
-//             <Link href="#">Cote d'Ivoire</Link>
-//           </li>
-//           <li>
-//             <Link href="#">Senegal</Link>
-//           </li>
-//         </ul>
-//       </div>
-
-//       <p>Des menus varies et divers </p>
-      
-//     </main>
-//   );
-// };
-// export default Acceuil;
-
-import styles from "./Acceuil.module.css";
-import Link from "next/link";
-
-const Acceuil = () => {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.contentWrapper}>
-        <h1>
-          Bienvenue dans notre page de presentation des traditions culinaires
-          africaines variees
-        </h1>
-        <div className={styles.divStyle}>
-          <ul className={styles.listeUl}>
-            <li>
-              <Link href="#">Cameroun</Link>
-            </li>
-            <li>
-              <Link href="#">Cote d'Ivoire</Link>
-            </li>
-            <li>
-              <Link href="#">Senegal</Link>
-            </li>
-          </ul>
+    <div className={styles.home_container}>
+      {/* <Navbar /> */}
+      <div className={styles.home_banner_container}>
+        <div className={styles.home_bannerImage_container}>
+            <Image src={BannerBackground} alt="imageBackground"/>          
         </div>
-        <p>Des menus varies et divers</p>
+        <div className={styles.home_text_section}>
+          <h1 className={styles.primary_heading}>
+            Vos repas favoris cuisines avec soins 
+            par des chefs issus du grand continent 
+            servis et livre a chaud.
+          </h1>
+          <p className={styles.primary_text}>
+            N'hesitez plus, peu importe vos origines, venez a la rencontre des saveurs 
+            des coins du continent africain 
+          </p>
+          <div className={styles.payStyle}>
+             <button className={styles.secondary_button}>
+            Cameroun <FiArrowRight />{" "}
+          </button>
+          <button className={styles.secondary_button}>
+            Senegal <FiArrowRight />{" "}
+          </button>
+          <button className={styles.secondary_button}>
+            Afrique du Sud <FiArrowRight />{" "}
+          </button>
+          </div>
+         
+        </div>
+        <div className={styles.home_image_section}>
+            <Image src={BannerImage} alt="exemple de plat"/>
+          
+        </div>
       </div>
-    </main>
+    </div>
   );
 };
 
-export default Acceuil;
+export default Home;
