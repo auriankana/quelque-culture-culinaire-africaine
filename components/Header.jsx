@@ -3,10 +3,10 @@ import Menu_Nav from './Menu_Nav'
 import { IoHome } from "react-icons/io5";
 
 
-export default function Header() {
+export default function Header(setPage) {
 return <header className={styles.header}>
         <IoHome />
 
-       <Menu_Nav/>
+       <Menu_Nav setPage = {setPage}/>
     </header>
 }
