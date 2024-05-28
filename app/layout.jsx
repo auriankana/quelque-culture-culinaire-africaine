@@ -1,11 +1,12 @@
-'use client'
+// 'use client'
 
-import Header from '@/components/Header';
-import Contact from "@/components/Contact"
+// import Header from '@/components/Header';
+// import Contact from "@/components/Contact"
 
+import Home from '@/components/Acceuil';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 // export const metadata = {
 //     title: 'Biblio-app',
@@ -13,18 +14,15 @@ const inter = Inter({ subsets: ['latin'] });
 // };
 export default function RootLayout({ children }) {
 
-    const [page, setPage] = useState('acceuil')
+    // const [page, setPage] = useState('acceuil')
 
     return (
         <html lang='en'>
         <body className={inter.className}>
           
           {/* The Header of our work */}
-          <Header setPage = {setPage}/>
-            {/* {children} */}
-            <main>
-                {page === 'Contact' && <Contact/> }
-            </main>
+          <Home/>
+            {children}
         </body>
         </html>
     );
